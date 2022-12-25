@@ -6,6 +6,10 @@ body{
 }
 
 .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     width: 420px;
 
     margin-top: 60px;
@@ -14,9 +18,7 @@ body{
     padding-top: 20px;
     padding-bottom: 50px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: 1px solid #DBB9B9;
 }
 
 .title{
