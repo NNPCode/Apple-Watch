@@ -1,27 +1,25 @@
 @import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.2;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+.card{
     width: 420px;
 
     margin-top: 60px;
     margin-left: 60px;
 
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding: 20px 40px 50px;
 
     border: 1px solid #DBB9B9;
+
+    text-align: center;
 }
 
-.title{
+.card-title{
     margin-top: 30px;
     margin-bottom: 30px;
 
@@ -30,42 +28,45 @@ body{
     color: #CD2626;
 }
 
-.subtitle{
-    width: 330px;
-
+.card-description{
     margin-bottom: 30px;
+
+    padding-left: 5px;
+    padding-right: 5px;
     
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
-    text-align: center;
 }
 
-.subtitle a{
+.card-description a{
     color: #BD3030;
+    text-decoration: underline;
 }
 
 .price{
     margin-bottom: 30px;
 
-    font-weight: 400;
     font-size: 26px;
 }
 
-.button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.price span{
+    font-weight: 700;
+}
 
-    width: 207px;
-    height: 60px;
+.button{
+    display: inline-block;
+    padding: 16px 42px 17px;
 
     background-color: #CD2626;
     border-radius: 8px;
 
     font-weight: 700;
     font-size: 22px;
+    line-height: 1.2;
     color: #FFFFFF;
+
+    transition: background-color .2s ease-in, color .2s ease-in;
 }
 
 .button:hover,:focus{
@@ -73,6 +74,8 @@ body{
 }
 
 .button:active{
+    position: relative;
+    top: 1px;
     background-color: #8E1010;
     color: #F1C9C9;
 }
